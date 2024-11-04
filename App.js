@@ -1,10 +1,10 @@
-import { Text, SafeAreaView } from 'react-native';
 import React from 'react';
+import 'react-native-safe-area-context';
+import 'react-native-gesture-handler';
+import Route from './src/navigation/route';
 
-export default function App() {
-  return (
-    <SafeAreaView>
-      <Text>App</Text>
-    </SafeAreaView>
-  );
-}
+const App = () => {
+  return <Route />;
+};
+
+export default App;
