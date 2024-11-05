@@ -1,10 +1,13 @@
-import { SafeAreaView, Text } from 'react-native';
 import React from 'react';
+import {SafeAreaView} from 'react-native';
+import {PaymentMethods, CardHeader, CardDetails} from '../components';
 
 const Card = () => {
   return (
     <SafeAreaView>
-      <Text>Card</Text>
+      <CardHeader />
+      <PaymentMethods />
+      <CardDetails />
     </SafeAreaView>
   );
 };
