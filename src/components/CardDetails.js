@@ -13,6 +13,7 @@ export const CardDetails = () => {
             <Text style={styles.cardInfoText}>4310 1030 3000 9530</Text>
             <Icons style={styles.iconPadding} iconName="copy" />
           </View>
+          <View style={styles.seperator} />
           <View style={styles.cardInfoRow}>
             <View style={[styles.rowWithIcon, {paddingRight: 18}]}>
               <Icons style={styles.iconsStyle} iconName="calendar" />
@@ -47,6 +48,7 @@ export const CardDetails = () => {
             -1304.<Text style={styles.transactionAmoountDecimal}>43₺</Text>
           </Text>
         </View>
+        <View style={styles.seperator} />
         <View style={styles.transactionRow}>
           <View style={styles.rowWithIcon}>
             <Icons style={styles.iconsStyle} iconName="drink" />
@@ -86,7 +88,6 @@ const styles = StyleSheet.create({
   cardInfoRow: {
     flexDirection: 'row',
     padding: 12,
-    borderBottomWidth: 1,
     borderColor: '#ECEEF0',
     alignItems: 'center',
   },
@@ -135,7 +136,7 @@ const styles = StyleSheet.create({
   transactionRow: {
     flexDirection: 'row',
     padding: 12,
-    borderBottomWidth: 1,
+
     borderColor: '#ECEEF0',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -164,5 +165,9 @@ const styles = StyleSheet.create({
     lineHeight: 18,
     fontFamily: 'TTNormsPro-Medium',
     color: '#151718',
+  },
+  seperator: {
+    borderTopWidth: 1,
+    borderColor: '#ECEEF0',
   },
 });
