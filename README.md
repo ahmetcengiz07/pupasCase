@@ -1,6 +1,12 @@
 <<<<<<< HEAD
 # pupasCase
-=======
+
+#Android
+![android](https://github.com/user-attachments/assets/db27ee65-3655-4e65-9f1e-66603befc3ca)
+
+#IOS
+![ios](https://github.com/user-attachments/assets/2b8d272e-119b-4acc-8b1a-8ac17623a086)
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
