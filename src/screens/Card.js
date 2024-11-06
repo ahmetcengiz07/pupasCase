@@ -4,8 +4,10 @@ import {PaymentMethods, CardHeader, CardDetails} from '../components';
 
 const Card = () => {
   return (
-    <SafeAreaView>
-      <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        style={styles.scrollableContent}>
         <CardHeader />
         <PaymentMethods />
         <CardDetails />
@@ -15,8 +17,11 @@ const Card = () => {
 };
 const styles = StyleSheet.create({
   container: {
-    marginBottom: 15,
     backgroundColor: '#F8F9FA',
+    flex: 1,
+  },
+  scrollableContent: {
+    marginBottom: 15,
   },
 });
 

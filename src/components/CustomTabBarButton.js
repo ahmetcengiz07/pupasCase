@@ -8,7 +8,7 @@ import {
 import React from 'react';
 import Icons from '../svg/icons';
 
-export const CustomTabBarButton = ({route, props}) => {
+export const CustomTabBarButton = ({route, ...props}) => {
   const labelColor = props?.accessibilityState?.selected
     ? '#E13915'
     : '#C1C8CD';

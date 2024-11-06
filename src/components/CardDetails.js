@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
   transactionAmoountDecimal: {
     fontSize: 12,
     lineHeight: 18,
-    fontFamily: 'TTNormsPro-Regular',
+    fontFamily: 'TTNormsPro-Medium',
     color: '#151718',
   },
 });

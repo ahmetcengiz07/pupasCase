@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     marginTop: 25,
     textAlign: 'center',
     color: '#313538',
-    fontFamily: 'TTNormsPro-Regular',
+    fontFamily: 'TTNormsPro-Medium',
   },
   cardImage: {
     width: 230,
@@ -91,13 +91,13 @@ const styles = StyleSheet.create({
   creditCardPriceText: {
     fontSize: 21,
     lineHeight: 23,
-    fontFamily: 'TTNormsPro-Regular',
+    fontFamily: 'TTNormsPro-Medium',
     color: '#fff',
   },
   creditCardDecimalPriceText: {
     fontSize: 16,
     lineHeight: 23,
-    fontFamily: 'TTNormsPro-Regular',
+    fontFamily: 'TTNormsPro-Medium',
     color: '#fff',
   },
   iconWrapper: {
