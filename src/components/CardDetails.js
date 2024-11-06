@@ -15,11 +15,11 @@ export const CardDetails = () => {
           </View>
           <View style={styles.cardInfoRow}>
             <View style={[styles.rowWithIcon, {paddingRight: 18}]}>
-              <Icons style={styles.iconsStyle} iconName="cvc" />
+              <Icons style={styles.iconsStyle} iconName="calendar" />
               <Text style={styles.cardInfoText}>10 / 26</Text>
             </View>
             <View style={styles.rowWithIcon}>
-              <Icons style={styles.iconsStyle} iconName="calendar" />
+              <Icons style={styles.iconsStyle} iconName="cvc" />
               <Text style={styles.cardInfoText}>430</Text>
               <Icons style={styles.iconPadding} iconName="copy" />
             </View>
@@ -97,6 +97,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 16,
+    alignSelf: 'center',
   },
   cardInfoText: {
     paddingHorizontal: 12,
