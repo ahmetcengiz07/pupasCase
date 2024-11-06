@@ -1,7 +1,12 @@
 import React from 'react';
-import {StyleSheet, Text, ImageBackground, View} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  ImageBackground,
+  View,
+  Dimensions,
+} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import {deviceWidth} from '../navigation/bottomTab';
 import Icons from '../svg/icons';
 
 export const CardHeader = () => {
@@ -19,7 +24,7 @@ export const CardHeader = () => {
         source={require('../assets/cardExp.png')}
         style={styles.cardImage}
         resizeMode="cover">
-        <View style={{justifyContent: 'space-between', flex: 1}}>
+        <View style={styles.creditCardWrapper}>
           <View style={styles.creditCardTopWrapper}>
             <Text style={styles.creditCardTopText}>WEDAL</Text>
             <Text style={styles.creditCardTopText}>PREMIUM</Text>
@@ -27,9 +32,12 @@ export const CardHeader = () => {
           <View style={[styles.creditCardTopWrapper, {marginBottom: 10}]}>
             <View>
               <Text style={styles.creditCardTopText}>Kart Bakiyesi</Text>
-              <Text style={styles.creditCardPriceText}>25.320,50₺</Text>
+              <Text style={styles.creditCardPriceText}>
+                25.320
+                <Text style={styles.creditCardDecimalPriceText}>,50₺</Text>
+              </Text>
             </View>
-            <Icons iconName="masterCard" />
+            <Icons style={styles.iconWrapper} iconName="masterCard" />
           </View>
         </View>
       </ImageBackground>
@@ -39,6 +47,7 @@ export const CardHeader = () => {
 
 const [designHeaderW, deasingHeaderH] = [375, 257];
 const designHeaderRatio = deasingHeaderH / designHeaderW;
+const deviceWidth = Dimensions.get('window').width;
 
 const styles = StyleSheet.create({
   gradient: {
@@ -57,6 +66,10 @@ const styles = StyleSheet.create({
     height: 115,
     alignSelf: 'center',
   },
+  creditCardWrapper: {
+    justifyContent: 'space-between',
+    flex: 1,
+  },
   creditCardTopWrapper: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -74,5 +87,15 @@ const styles = StyleSheet.create({
     lineHeight: 23,
     fontWeight: '500',
     color: '#fff',
+  },
+  creditCardDecimalPriceText: {
+    fontSize: 16,
+    lineHeight: 23,
+    fontWeight: '500',
+    color: '#fff',
+  },
+  iconWrapper: {
+    justifyContent: 'flex-end',
+    paddingBottom: 3,
   },
 });

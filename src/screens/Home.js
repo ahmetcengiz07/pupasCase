@@ -3,7 +3,8 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView
+      style={{alignItems: 'center', justifyContent: 'center', flex: 1}}>
       <Text>Home</Text>
     </SafeAreaView>
   );
