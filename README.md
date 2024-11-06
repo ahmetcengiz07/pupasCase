@@ -1,14 +1,14 @@
 <<<<<<< HEAD
 # pupasCase
 
-#Android
-![android](https://github.com/user-attachments/assets/db27ee65-3655-4e65-9f1e-66603befc3ca)
-
 #IOS
-![ios](https://github.com/user-attachments/assets/2b8d272e-119b-4acc-8b1a-8ac17623a086)
+![ios](https://github.com/user-attachments/assets/9cf350de-b2f5-48af-9da9-be88059c61c5)
 
+#Android
+![android](https://github.com/user-attachments/assets/7654957c-ec5d-4911-84da-08956632fa4a)
 
-<img width="806" alt="ios:android" src="https://github.com/user-attachments/assets/b390fab2-92d6-4b34-9d32-13186d77d5d4">
+<img width="806" alt="ios:android" src="https://github.com/user-attachments/assets/6ca05c9f-a2c0-44d1-8990-5316816cf274">
+
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
