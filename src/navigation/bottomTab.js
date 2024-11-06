@@ -3,7 +3,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home';
 import Card from '../screens/Card';
 import Profile from '../screens/Profile';
-import {Text, Dimensions, TouchableOpacity} from 'react-native';
+import {Text, Dimensions, TouchableOpacity, View} from 'react-native';
 import Icons from '../svg/icons';
 
 export const deviceWidth = Dimensions.get('window').width;
@@ -30,12 +30,13 @@ const BottomTab = () => (
               width: deviceWidth / 3,
               alignItems: 'center',
             }}>
-            <Text
+            <View
               style={{
                 borderTopWidth: props?.accessibilityState?.selected ? 2 : 0,
                 borderRadius: 1,
                 width: barWidth,
                 borderColor: labelColor,
+                marginBottom: 10,
               }}
             />
             <Icons
@@ -60,7 +61,9 @@ const BottomTab = () => (
         height: tabBarHeight,
         borderRadius: 10,
         backgroundColor: '#fff',
+        width: deviceWidth,
       },
+
       tabBarActiveTintColor: '#E13915',
       tabBarInactiveTintColor: '#C1C8CD',
       headerShown: false,

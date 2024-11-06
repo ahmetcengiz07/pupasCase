@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableOpacity, View} from 'react-native';
-import Svg, {Path} from 'react-native-svg';
+import Svg, {Defs, G, LinearGradient, Path, Stop} from 'react-native-svg';
 
 const Icons = props => {
   const {iconName, color, width, height, onPress, style} = props;
@@ -290,21 +290,62 @@ const Icons = props => {
           </Svg>
         </TouchableOpacity>
       );
-    case 'drink2':
+    case 'masterCard':
       return (
         <TouchableOpacity style={style} onPress={onPress} disabled={!onPress}>
           <Svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
+            width={37}
+            height={22}
+            viewBox="0 0 37 22"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <Path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M7.79408 2.99478C7.63938 2.34383 7.05577 1.875 6.37561 1.875H4.16668L4.08187 1.88071C3.77681 1.92209 3.54168 2.18359 3.54168 2.5C3.54168 2.84518 3.8215 3.125 4.16668 3.125H6.37561L6.42565 3.13107C6.506 3.15092 6.56893 3.21755 6.58154 3.30256L6.86496 5.20833H4.16668C3.76186 5.20833 3.37525 5.37661 3.09938 5.67288C2.82351 5.96916 2.68321 6.36678 2.71205 6.77057L3.00461 10.8663C3.00503 10.8745 3.00561 10.8826 3.00635 10.8907L3.37106 15.9966C3.45672 17.1958 4.4546 18.125 5.6569 18.125H11.843C13.0453 18.125 14.0432 17.1958 14.1289 15.9966L14.5735 9.7721C16.5621 9.57423 18.125 7.8863 18.125 5.83333C18.125 3.64721 16.3528 1.875 14.1667 1.875C12.1932 1.875 10.5571 3.31918 10.2574 5.20833H8.12871L7.81798 3.1189L7.79408 2.99478ZM11.5308 5.20833C11.813 4.01387 12.886 3.125 14.1667 3.125C15.6624 3.125 16.875 4.33756 16.875 5.83333C16.875 7.159 15.9226 8.2622 14.6646 8.49598L14.7879 6.77057C14.8167 6.36679 14.6764 5.96918 14.4006 5.67291C14.1247 5.37663 13.7381 5.20833 13.3333 5.20833H11.5308ZM10.8333 6.45833H8.3146L8.87227 10.2083H13.2892L13.5411 6.68151C13.5452 6.62383 13.5251 6.56703 13.4857 6.5247C13.4463 6.48237 13.3911 6.45833 13.3333 6.45833H10.8333ZM4.61789 15.9075L4.30008 11.4583H8.32234C8.32914 11.4584 8.33596 11.4584 8.3428 11.4583H13.1999L12.8821 15.9075C12.8431 16.4527 12.3895 16.875 11.843 16.875H5.6569C5.1104 16.875 4.65682 16.4527 4.61789 15.9075ZM4.21079 10.2083H7.60852L7.05085 6.45833H4.16668C4.10885 6.45833 4.05362 6.48237 4.01421 6.5247C3.9748 6.56702 3.95476 6.62383 3.95888 6.68151L4.21079 10.2083Z"
-              fill="#E13915"
-            />
+            xmlns="http://www.w3.org/2000/svg"
+            {...props}>
+            <G
+              style={{
+                mixBlendMode: 'overlay',
+              }}
+              opacity={0.3}
+              filter="url(#filter0_f_0_1)">
+              <Path
+                d="M36.349 11.317c-.121 5.436-4.623 9.744-10.054 9.621-5.43-.122-9.736-4.628-9.614-10.064.121-5.436 4.622-9.743 10.053-9.62 5.431.121 9.736 4.627 9.615 10.063z"
+                stroke="url(#paint0_linear_0_1)"
+                strokeWidth={0.569951}
+              />
+            </G>
+            <G
+              style={{
+                mixBlendMode: 'overlay',
+              }}
+              opacity={0.3}
+              filter="url(#filter1_f_0_1)">
+              <Path
+                d="M21.183 11.081c-.121 5.436-4.623 9.743-10.054 9.621-5.43-.122-9.736-4.628-9.614-10.064.121-5.436 4.622-9.744 10.053-9.621 5.431.122 9.736 4.628 9.615 10.064z"
+                stroke="url(#paint1_linear_0_1)"
+                strokeWidth={0.569951}
+              />
+            </G>
+            <Defs>
+              <LinearGradient
+                id="paint0_linear_0_1"
+                x1={18.5155}
+                y1={4.79964}
+                x2={34.908}
+                y2={21.5329}
+                gradientUnits="userSpaceOnUse">
+                <Stop stopColor="#fff" />
+                <Stop offset={1} stopColor="#fff" stopOpacity={0} />
+              </LinearGradient>
+              <LinearGradient
+                id="paint1_linear_0_1"
+                x1={3.3495}
+                y1={4.56331}
+                x2={19.742}
+                y2={21.2966}
+                gradientUnits="userSpaceOnUse">
+                <Stop stopColor="#fff" />
+                <Stop offset={1} stopColor="#fff" stopOpacity={0} />
+              </LinearGradient>
+            </Defs>
           </Svg>
         </TouchableOpacity>
       );
