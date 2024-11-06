@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   buttonText: {
     paddingLeft: 6,
     color: '#fff',
-    fontWeight: '500',
+    fontFamily: 'TTNormsPro-Medium',
     fontSize: 14,
     lineHeight: 20,
   },

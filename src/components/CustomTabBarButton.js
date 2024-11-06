@@ -10,7 +10,7 @@ import Icons from '../svg/icons';
 
 export const CustomTabBarButton = ({route, props}) => {
   const labelColor = props?.accessibilityState?.selected
-    ? '#EF4A15'
+    ? '#E13915'
     : '#C1C8CD';
   return (
     <TouchableOpacity {...props} style={styles.tabWrapper}>
@@ -59,5 +59,6 @@ export const styles = StyleSheet.create({
     marginTop: 5,
     fontSize: 11,
     lineHeight: 19,
+    fontFamily: 'TTNormsPro-Medium',
   },
 });

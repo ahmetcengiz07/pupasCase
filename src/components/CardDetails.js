@@ -43,7 +43,9 @@ export const CardDetails = () => {
               <Text style={styles.transactionDate}>30.03.2024</Text>
             </View>
           </View>
-          <Text style={styles.transactionAmount}>-1304.43₺</Text>
+          <Text style={styles.transactionAmount}>
+            -1304.<Text style={styles.transactionAmoountDecimal}>43₺</Text>
+          </Text>
         </View>
         <View style={styles.transactionRow}>
           <View style={styles.rowWithIcon}>
@@ -53,7 +55,9 @@ export const CardDetails = () => {
               <Text style={styles.transactionDate}>13.04.2024</Text>
             </View>
           </View>
-          <Text style={styles.transactionAmount}>-310.00₺</Text>
+          <Text style={styles.transactionAmount}>
+            -310.<Text style={styles.transactionAmoountDecimal}>00₺</Text>
+          </Text>
         </View>
       </View>
     </View>
@@ -63,13 +67,12 @@ export const CardDetails = () => {
 const styles = StyleSheet.create({
   cardInfoContainer: {
     paddingHorizontal: 20,
-    backgroundColor: '#F8F9FA',
   },
   sectionHeader: {
     marginTop: 12,
   },
   sectionHeaderText: {
-    fontWeight: '500',
+    fontFamily: 'TTNormsPro-Medium',
     fontSize: 16,
     lineHeight: 24,
     paddingVertical: 5,
@@ -98,6 +101,8 @@ const styles = StyleSheet.create({
   cardInfoText: {
     paddingHorizontal: 12,
     paddingVertical: 7,
+    fontFamily: 'TTNormsPro-Medium',
+    color: '#151718',
   },
   iconPadding: {
     paddingHorizontal: 8,
@@ -121,9 +126,9 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   allButtonText: {
-    fontSize: 16,
-    lineHeight: 24,
-    fontWeight: '500',
+    fontSize: 14,
+    lineHeight: 20,
+    fontFamily: 'TTNormsPro-Medium',
     color: '#313538',
   },
   transactionRow: {
@@ -140,17 +145,23 @@ const styles = StyleSheet.create({
   transactionTitle: {
     fontSize: 14,
     lineHeight: 18,
-    fontWeight: '500',
+    fontFamily: 'TTNormsPro-Medium',
     color: '#151718',
   },
   transactionDate: {
     fontSize: 12,
     lineHeight: 15,
-    fontWeight: '400',
+    fontFamily: 'TTNormsPro-Regular',
     color: '#697177',
   },
   transactionAmount: {
     paddingHorizontal: 12,
     paddingVertical: 7,
+  },
+  transactionAmoountDecimal: {
+    fontSize: 12,
+    lineHeight: 18,
+    fontFamily: 'TTNormsPro-Regular',
+    color: '#151718',
   },
 });

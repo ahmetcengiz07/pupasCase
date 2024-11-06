@@ -21,7 +21,7 @@ export const CardHeader = () => {
       ]}>
       <Text style={styles.cardHeaderText}>Kartım</Text>
       <ImageBackground
-        source={require('../assets/cardExp.png')}
+        source={require('../images/cardExp.png')}
         style={styles.cardImage}
         resizeMode="cover">
         <View style={styles.creditCardWrapper}>
@@ -31,7 +31,7 @@ export const CardHeader = () => {
           </View>
           <View style={[styles.creditCardTopWrapper, {marginBottom: 10}]}>
             <View>
-              <Text style={styles.creditCardTopText}>Kart Bakiyesi</Text>
+              <Text style={styles.creditCardBalanceText}>Kart Bakiyesi</Text>
               <Text style={styles.creditCardPriceText}>
                 25.320
                 <Text style={styles.creditCardDecimalPriceText}>,50₺</Text>
@@ -57,9 +57,9 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 24,
     marginTop: 25,
-    fontWeight: '500',
     textAlign: 'center',
     color: '#313538',
+    fontFamily: 'TTNormsPro-Regular',
   },
   cardImage: {
     width: 230,
@@ -79,19 +79,25 @@ const styles = StyleSheet.create({
   creditCardTopText: {
     fontSize: 9,
     lineHeight: 16,
-    fontWeight: '700',
+    fontFamily: 'TTNormsPro-Bold',
+    color: '#fff',
+  },
+  creditCardBalanceText: {
+    fontSize: 9,
+    lineHeight: 16,
+    fontFamily: 'TTNormsPro-Regular',
     color: '#fff',
   },
   creditCardPriceText: {
     fontSize: 21,
     lineHeight: 23,
-    fontWeight: '500',
+    fontFamily: 'TTNormsPro-Regular',
     color: '#fff',
   },
   creditCardDecimalPriceText: {
     fontSize: 16,
     lineHeight: 23,
-    fontWeight: '500',
+    fontFamily: 'TTNormsPro-Regular',
     color: '#fff',
   },
   iconWrapper: {
